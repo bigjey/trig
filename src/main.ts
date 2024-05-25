@@ -218,4 +218,9 @@ canvas.addEventListener('mousemove', function (e) {
   ray.direction.y = e.pageY;
 })
 
+canvas.addEventListener('touchmove', function (e) {
+  ray.direction.x = e.touches[0].pageX;
+  ray.direction.y = e.touches[0].pageX;
+})
+
 frame();
